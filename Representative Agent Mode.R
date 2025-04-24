@@ -160,7 +160,7 @@ server <- function(input, output) {
     
     # Jacobian matrix with new labels
     J <- matrix(c(a11, a12, a21, a22), nrow = 2, byrow = TRUE)
-    colnames(J) <- c("∂c'/∂c", "∂k'/∂c")  # Column labels
+    colnames(J) <- c("∂c'", "∂k'")  # Column labels
     rownames(J) <- c("∂c", "∂k")  # Row labels
     
     det_J <- det(J)
